@@ -1,0 +1,23 @@
+<div class="card container" style="padding:15px; margin-top:1em">
+
+  <p id="notice"><%= notice %></p>
+
+  <h1 style="padding:15px"> Artículos publicados por <%= @category.title %> </h1>
+  <div class="d-flex justify-content-around" style="padding:15px">
+    <%= render @category.articles %>
+  </div>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @category.title %>
+  </p>
+
+  <p>
+    <strong>Color:</strong>
+    <%= @category.color %>
+  </p>
+
+  <%= link_to 'Editar', edit_category_path(@category) %>
+  <%= link_to 'Volver', categories_path %>
+
+<div>
