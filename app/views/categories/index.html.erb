@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+  <h1 style="padding:15px">Categorías</h1>
+<div class="card container" style="padding:15px; margin-top:1em">
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Color</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @categories.each do |category| %>
+        <tr>
+          <td><%= category.title %></td>
+          <td><%= category.color %></td>
+          <td><%= link_to 'Mostrar categoría', category %></td>
+          <td><%= link_to 'Editar categoría', edit_category_path(category) %></td>
+          <td><%= link_to 'Eliminar categoría', category, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'Nueva categoría', new_category_path %>
+</div>

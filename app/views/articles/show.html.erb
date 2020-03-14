@@ -1,0 +1,37 @@
+<div class="card container" style="padding:15px; margin-top:1em">
+
+  <h1><%=@article.title%></h1>
+
+  <div>
+    <p> Esrito por <strong><%= @article.user.email%></strong></p>
+    <% if current_user.avatar.attached?%>
+    <%= image_tag url_for(current_user.avatar), height:31%>
+    <%end%>
+  </div>
+
+  <div>
+    <%=@article.content%>
+  </div>
+
+  <div class="margin-top">
+    <p class="label">Etiquetas</p>
+    <% @article.categories.each do |category| %>
+      <span class="badge badge-pill padding" style="background-color:<%=category.color %>">
+        <%= link_to category.title, category, class:"text-white"%>
+      </span>
+    <%end%>
+  </div>
+
+  <div>
+      <%=link_to "Eliminar artículo", @article, method: :delete, data: { confirm: 'Estas seguro?' }%>
+  </div>
+
+  <div>
+      <%=link_to "Editar Artículo", edit_article_path(@article) %>
+  </div>
+
+  <div>
+    <%= link_to "Volver", articles_path %>
+  </div>
+
+</div>
