@@ -2,10 +2,12 @@ class Article < ApplicationRecord
   has_rich_text :content #content es un arbitrario, puede ser el body el articulo, etc. Luego colocar el control de action_text en el formulario.
   belongs_to :user #Article pertenece a user
   has_many :has_categories
-  has_many :categories, through: :has_categories
+  has_many :categories, through: :has_categories, dependent: :destroy
   attr_accessor :category_elements #agregando una propiedad al objeto. Los modelos son simples y sencillas clases, que cuentan con algunas cosas adicionales ya que estan heredando del ActiveRecord que es el ORM.
                                    #attr_accessor permite definir una propiedad que podemos leer y que podemos escribir.
                                    #attr_accessor es como agregarle una propiedad al objeto, en éste ejemplo category_elements
+  has_many :comments, dependent: :destroy
+  validates :title, presence:true, length:{minimum:5}
 
   def save_categories
     #1category_elements 1,2,3 (strings de ids separadas por comas)

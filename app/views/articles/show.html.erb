@@ -10,17 +10,24 @@
   </div>
 
   <div>
-    <%=@article.content%>
+    <%=@article.content%><br>
   </div>
 
-  <div class="margin-top">
+  <div>
     <p class="label">Etiquetas</p>
     <% @article.categories.each do |category| %>
       <span class="badge badge-pill padding" style="background-color:<%=category.color %>">
-        <%= link_to category.title, category, class:"text-white"%>
+        <%= link_to category.title, category, class:"text-white"%><br>
       </span>
     <%end%>
   </div>
+
+
+  <h2>Comentarios:</h2>
+  <%= render @article.comments %>
+
+  <h2>Agegar un comentario:</h2>
+  <%= render "comments/form" %>
 
   <div>
       <%=link_to "Eliminar artículo", @article, method: :delete, data: { confirm: 'Estas seguro?' }%>
