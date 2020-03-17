@@ -1,4 +1,3 @@
-# README
 
 # Blog
 Hola, mi nombre es Luis Fernando y en mi proceso de aprendizaje, con ayuda de herramientas varias, quiero mostrar las diferentes vistas de los diferentes recursos consultados en el Blog mismo. Quiero aclarar que es necesaria la implementación de varias funcionalidades pero aquí intento mostrar el avance hasta el momento.
