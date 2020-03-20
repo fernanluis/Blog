@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :users, only: [:update] # genera una ruta como ésta: patch "articles/:id", to: "articles#update", as: :article
   root to: "home#index"#ruta base, la ruta base es adonde tenemos que ir cuando voy a la página sin ningu diagonal, path en términos técnicos.
   #no colocamos root "/" porque se asume que el root es ése diagonal, es la ruta base, y no tiene ningún diagonal.
-  
+
   #8get "articles/user/:user_id", to: "articles#from_author" va como línea adicional a resources.
   resources :categories #1
   resources :articles do #9ésta misma línea acepta un bloque para colocar rutas adicionales que no vienen en los resources como la línea de arriba inmediata.

@@ -1,6 +1,8 @@
 <div class="card container" style="padding:15px; margin-top:1em">
   <p>Editar Usuario</p>
-<%= image_tag url_for(current_user.avatar), height: 211%>
+  <% if current_user.avatar.attached?%>
+    <%= image_tag url_for(current_user.avatar), height:91%>
+  <%end%>
   <%= form_with(model:current_user, local: true) do |form| %>
     <%= form.label :avatar%>
     <%= form.file_field :avatar %>

@@ -1,5 +1,6 @@
 <div class="card container" style="padding:15px; margin-top:1em">
-  <h3 class="text-uppercase"><%=article.title%></h3>
-  <p class="text-secondary"><%=article.created_at%></p>
+  <h3><%=article.title%></h3>
+  <p class="text-secondary"> Fecha de creación: <%=article.created_at%></p>
+  <p class="text-secondary">Autor: <%=article.user.email%></p>
   <%= link_to "Ver más", article %>
 </div>

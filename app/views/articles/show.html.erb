@@ -3,9 +3,11 @@
   <h1><%=@article.title%></h1>
 
   <div>
-    <p> Esrito por <strong><%= @article.user.email%></strong></p>
+    <p> Escrito por <strong><%= @article.user.email%></strong></p>
     <% if current_user.avatar.attached?%>
-    <%= image_tag url_for(current_user.avatar), height:31%>
+    <%= image_tag url_for(current_user.avatar), height:91%>
+    <%elsif%>
+      <p>No has ingresado un foto de perfil.</p>
     <%end%>
   </div>
 
