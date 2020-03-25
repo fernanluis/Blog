@@ -51,4 +51,4 @@ El Blog presenta un inicio, artículos, comentarios de los artículos, perfil co
 - Editar categoríaías;
 ![captura 12](https://github.com/fernanluis/Blog/blob/master/category_edit.png)
 
-# Aún quedan funcionalidas por desarrollar y mucho por aprender cláramente.
+# Sigo camino en mi aprendizaje. Deséame suerte! ;)
