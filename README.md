@@ -42,7 +42,7 @@ El Blog presenta un inicio, artículos, comentarios de los artículos, perfil co
 -  Categorias:
 ![captura8](https://github.com/fernanluis/Blog/blob/master/categories.png)
 
-- Cateegoria_id:
+- Categoria_id:
 ![captura9](https://github.com/fernanluis/Blog/blob/master/categories_id.png)
 
 - Crear categoria:
@@ -51,4 +51,4 @@ El Blog presenta un inicio, artículos, comentarios de los artículos, perfil co
 - Editar categoríaías;
 ![captura 12](https://github.com/fernanluis/Blog/blob/master/category_edit.png)
 
-# Aun quedan funcionalidaes por desarrollar.
+# Aún quedan funcionalidas por desarrollar y mucho por aprender cláramente.
