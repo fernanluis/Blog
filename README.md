@@ -14,14 +14,15 @@ Action-text provee dos cosas, un editor de txto-trix, y un lugar para guardar el
 -  Arquitetura REST
 - Utilizando Scaffold de Categorías. los rieles generan andamios, es un generador para el CRUD de un recurso llamado categorías.
 - Versión Ruby '2.7.0'
-- DB: sqlit3, pronto configurar PostgreeSQL.
+- DB: PostgreeSQL.
+- Desplegado en Heroku.
 
 El Blog presenta un inicio, artículos, comentarios de los artículos, perfil con imagen, escribir, editar, actualizar. Un perfil de usuario, autenticación para modificar, crear, actualizar, etc., Inicio de sesión, Cierres de sesión, Registro, etc.
 - A continuación, Home;
 
 ![captura1](https://github.com/fernanluis/Blog/blob/master/home.png)
 
--  Articles, index:
+-  Artículos, index:
 ![captura2](https://github.com/fernanluis/Blog/blob/master/articles.png)
 
 - Ecribir articulos:
@@ -51,4 +52,4 @@ El Blog presenta un inicio, artículos, comentarios de los artículos, perfil co
 - Editar categoríaías;
 ![captura 12](https://github.com/fernanluis/Blog/blob/master/category_edit.png)
 
-# Sigo camino en mi aprendizaje. Deséame suerte! ;)
+# Sigo camino en mi aprendizaje. Deséame suerte! ;) 
