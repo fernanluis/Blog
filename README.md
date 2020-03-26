@@ -1,5 +1,42 @@
 
 # Blog
+
+Archivo README.md en edición..
+
+Blog es una sencilla aplicación desarrollada en Ruby on Rails.
+
+Rails 6.0.2.1
+
+Ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-linux]
+
+webpacker 4.0
+
+Integrado con Bootstrap
+
+PostgreSQL 10.12 
+
+Ubuntu 18.04.4 LTS
+
+Action_Text para guardar texto enriquecido, que podamos modificar.
+
+gem 'devise' para autenticación de usuarios.
+
+Blog, presenta parámetros fuertes que simplifica código duplicado, además de contar con código reciclado.
+
+REST aplicado 
+
+Relación uno a muchos y relación muchos a muchos. Ésta última a través de una tabla asociativa: HasCategory.
+
+Se asigna una propiedad (para leer y ecribir) al objeto Artículo a través de attr_accessor, en éste caso un atributo categoría para el objeto Artículo.
+
+Check Boxes para la asignación de las categorías a los artículos.
+
+5 controladores: Articles, Comments, Categories, Home, Users.
+
+5 modelos: Article, Categorý, Comment, Has_Category, User.
+
+...
+
 Hola, mi nombre es Luis Fernando y en mi proceso de aprendizaje, con ayuda de herramientas varias, quiero mostrar las diferentes vistas de los diferentes recursos consultados en el Blog. Quiero aclarar que es necesaria la implementación de varias funcionalidades pero aquí intento mostrar el avance hasta el momento.
 
 Las herramientas utilizadas para la creación del Blog se detallan a continuación;
