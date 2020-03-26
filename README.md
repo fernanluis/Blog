@@ -1,7 +1,7 @@
 
 # Blog
 
-Archivo README.md en edición..
+## Archivo README.md en edición..
 
 Blog es una sencilla aplicación desarrollada en Ruby on Rails.
 
