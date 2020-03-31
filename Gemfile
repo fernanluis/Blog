@@ -10,6 +10,10 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 
 gem 'pg'
 
+gem 'activeadmin'
+gem 'cancancan'
+gem 'pundit'
+
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets

@@ -1,3 +1,11 @@
+Las ultimas modificaciones fueron agregar campos de nombre y apellido a la página de registro
+
+Se agregaron las siguientes gemas.( https://activeadmin.info/0-installation.html )
+
+gem 'activeadmin'
+gem 'cancancan'
+gem 'pundit'
+
 
 # Blog
 Hola, mi nombre es Luis Fernando y en mi proceso de aprendizaje, con ayuda de herramientas varias, quiero mostrar las diferentes vistas de los diferentes recursos consultados en el Blog. Quiero aclarar que es necesaria la implementación de varias funcionalidades pero aquí intento mostrar el avance hasta el momento.

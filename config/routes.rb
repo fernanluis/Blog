@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   #todo lo que que se pueda consultar en el sitio web pasa por las rutas
   #todo lo que tenga que ver con algo que mostrar pasa por las rutas y se definen aquí

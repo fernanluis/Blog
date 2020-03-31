@@ -2,6 +2,17 @@
   <h2>Inicia sesión</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+    <div class="field">
+      <%= f.label :first_name %>
+      <%= f.text_field :fname, autofocus: true, autocomplete: "fname" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :last_name %><br />
+      <%= f.text_field :lname, autofocus: true, autocomplete: "lname" %>
+    </div>
+
     <div class="field">
       <%= f.label :email, "Correo electrónico" %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
